@@ -8,7 +8,7 @@ sw_1 = DigitalInOut(board.A1)
 sw_1.switch_to_input(pull=Pull.UP)
 
 # create a digitalinout object for the STEMMA switch
-sw_2 = DigitalInOut(board.A5)
+sw_2 = DigitalInOut(board.D5)
 # set as an input, no need for a pull becuase the PCB has a pull-up resistor
 sw_2.switch_to_input()
 
