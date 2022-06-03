@@ -1,1 +1,3 @@
 Double Click the reset button on nRF52840 will lead to "Boot Loader Mode"
+Black 10 pin port is a hardware coder port
+SPI Serial Peripheral Interface
