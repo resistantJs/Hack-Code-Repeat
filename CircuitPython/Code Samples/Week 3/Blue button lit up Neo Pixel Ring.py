@@ -4,6 +4,8 @@ from digitalio import DigitalInOut, Direction, Pull
 import neopixel
 
 pixel_ring = neopixel.NeoPixel(board.D13, 12, bpp=4)
+pixel_ring.brightness = 0.5
+# 0 to 1
 
 
 # create a digitalinout object for the breadboard wired switch
@@ -43,6 +45,8 @@ while True:
     if sw_2_read is False:
         pixel_ring.fill(BLUE)
         print("blue")
+        pixel_ring.brightness = 1
     else:
         pixel_ring.fill(WHITE)
         print("white")
+        pixel_ring.brightness = 0.01
